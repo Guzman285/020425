@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+@media (max-width: 1024px) {
+    body{
+        background-color: blue;
+        color: red;
+    }
+    .contenedor {
+        grid-template-columns: auto auto auto;
+        
+    }
+}
+
+@media (max-width: 500px) {
+    body{
+        background-color: green;
+        color: red;
+    }
+    .contenedor {
+        grid-template-columns: auto auto;
+    }
+}
+ 
